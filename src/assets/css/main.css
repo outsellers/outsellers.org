@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "grid.css";
+@import "modules/header-main.css";
+@import "modules/footer-main.css";
+@import "modules/hero.css";
+
+:root {
+    --brand-primary: #98BAE3;
+    --brand-silver: #D1D9E3;
+    --disclaimer: 13px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: #D1D9E3;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 42px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+h1.logo {
+    color: var(--brand-primary);
+    font-size: 21px;
+    line-height: 28px;
+}
+
+p {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 21px;
+}
+
+section {
+    padding: 21px 0;
+}
+
+section.main {
+    background: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+header.site-header {
+    background: var(--brand-silver);
+}
+
+.header--alternate {
+    color: #CED4E3;
+    font-weight: 700;
+    margin-bottom: 21px;
+    letter-spacing: .5px;
+    font-size: 21px;
+    padding-bottom: 7px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.site-header--inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    padding: 21px 0;
+}
+
+/* HERO */
+.hero {
+
+}
+
+/*
+Efforts
+ */
+
+.effort--results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.effort--results .effort--products,
+.effort--results aside {
+    width: 50%;
+}
+.effort--results aside {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 776px) {
+    .effort--results .effort--products,
+    .effort--results aside {
+        width: 100%;
+    }
+
+    .effort--results aside {
+        padding-left: 0px;
+    }
+}
+
+
+
+/*
+Plugins
+ */
+
+/* FOOTER */
+
+footer {
+    background-color: var(--brand-silver);
+    display: flex;
+    justify-content: center;
+    padding-top: 42px;
+}
+
+.copyright {
+    font-size: var(--disclaimer);
+    color: var(--brand-primary);
+}
